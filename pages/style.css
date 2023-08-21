@@ -103,6 +103,7 @@ header
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    width: 100%;
     align-items: center;
 }
 .real
@@ -133,4 +134,14 @@ header
     justify-content: center;
     align-items: center;
     border-bottom: 5px solid wheat;
+}
+#kidsSection
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 20%;
+
 }

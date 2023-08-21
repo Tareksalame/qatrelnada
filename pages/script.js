@@ -176,7 +176,19 @@ menList.forEach((val)=>
 
 
 let unisexList = [
-    {womenImg : './men.svg', image : '../MENIMAGES/1.jpg' , replace : 'M621', real:'HERMES TERRE D\'HERMES H24'},
+    {womenImg : './men.svg', image : '../unisexImages/1.jpg' , replace : 'MW461', real:'BY KILIAN AMBER OUD'},
+    {womenImg : './men.svg', image : '../unisexImages/2.jpg' , replace : 'MW165', real:'EX NIHILO FLUER NARCOTIQUE'},
+    {womenImg : './men.svg', image : '../unisexImages/3.jpg' , replace : 'MW303', real:'M.F KURDUAN BACCARAT ROUAGE 540 EXTRAIT DE PARFUM'},
+    {womenImg : './men.svg', image : '../unisexImages/4.jpg' , replace : 'MW236', real:'NASOMATTO BLACK AFGANO'},
+    {womenImg : './men.svg', image : '../unisexImages/5.jpg' , replace : 'MW167', real:'MAISON FRANCIS KURKDDAN BACCARAT ROUAGE 540'},
+    {womenImg : './men.svg', image : '../unisexImages/6.jpg' , replace : 'MW216', real:'MONTALE CHOCOLATE GREEDY'},
+    {womenImg : './men.svg', image : '../unisexImages/7.jpg' , replace : 'MW225', real:'MONTALE KABUL OUD'},
+    {womenImg : './men.svg', image : '../unisexImages/8.jpg' , replace : 'MW173', real:'SOSPIRO ERBA PURE'},
+    {womenImg : './men.svg', image : '../unisexImages/9.jpg' , replace : 'MW203', real:'TIZIAN TERENZ KIRKE'},
+    {womenImg : './men.svg', image : '../unisexImages/10.jpg' , replace : 'MW89', real:'TOM FORD BLACK ORCHID'},
+    {womenImg : './men.svg', image : '../unisexImages/11.jpg' , replace : 'MW531', real:'THOMAS KOSMALA NO 4 APRES L\'AMOUR'},
+    {womenImg : './men.svg', image : '../unisexImages/12.jpg' , replace : 'MW379', real:'TOM FORD BITTER BEACH'},
+    {womenImg : './men.svg', image : '../unisexImages/13.jpg' , replace : 'MW197', real:'TOM FORD TOBACCO VANILLE'},
 ]
 let unisex = document.getElementById('unisex');
 
@@ -212,4 +224,48 @@ const unisexFunction = (val)=>
 unisexList.forEach((val)=>
 {
     unisexFunction(val)
+})
+
+
+
+let kidsList = [
+    {image : '../kidsImages/1.jpg' , replace : 'FOR BOYS  ', real:'CAPTAIN AVENGERS'},
+    {image : '../kidsImages/2.jpg' , replace : 'FOR BOYS  ', real:'JACK SAVIOR'},
+    {image : '../kidsImages/3.jpg' , replace : 'FOR BOYS  ', real:'STRONG PRINCE'},
+    {image : '../kidsImages/4.jpg' , replace : 'FOR GIRLS  ', real:'BANEERJEE & MASA'},
+    {image : '../kidsImages/5.jpg' , replace : 'FOR GIRLS  ', real:'BEAUTIFULL ANNA'},
+    {image : '../kidsImages/6.jpg' , replace : 'FOR GIRLS  ', real:'BEAUTIFULL ANNA'},
+    {image : '../kidsImages/7.jpg' , replace : 'FOR GIRLS  ', real:'SWEET ELENA'},
+]
+let kids = document.getElementById('kids');
+
+const kidsFunction = (val)=>
+{
+    let mainDiv = document.createElement('div');
+    let mainPhotoDiv = document.createElement('div');
+    let replace = document.createElement('h3');
+    replace.style.marginRight = '40px'
+    let secondPhotoDiv = document.createElement('div')
+    let secondPhoto = document.createElement('img');
+    let real = document.createElement('h3');
+    mainDiv.setAttribute('class','mainWomanDiv');
+    mainPhotoDiv.setAttribute('class','mainPhotoDiv')
+    replace.setAttribute('class','replaceWomen');
+    secondPhotoDiv.setAttribute('class','secondPhotoDiv')
+    secondPhoto.setAttribute('class','secondPhoto')
+    real.setAttribute('class','real')
+    secondPhotoDiv.appendChild(secondPhoto)
+    secondPhotoDiv.appendChild(real)
+    mainPhotoDiv.appendChild(replace)
+    mainDiv.appendChild(mainPhotoDiv)
+    mainDiv.appendChild(secondPhotoDiv)
+    kids.appendChild(mainDiv)
+    replace.innerHTML = val.replace
+    secondPhoto.src = val.image
+    real.innerHTML = val.real
+}
+
+kidsList.forEach((val)=>
+{
+    kidsFunction(val)
 })
