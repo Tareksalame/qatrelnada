@@ -1,0 +1,114 @@
+html
+{
+    scroll-behavior: smooth;
+}
+body
+{
+    background-color: #090C0F;
+}
+#MainLogo
+{
+    margin-top: 20%;
+    width: 50%;
+}
+header
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#title
+{
+    color: wheat;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 30px;
+}
+#menuDiv
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    align-items: center;
+    background-color: wheat;
+    height: 50px;
+    margin-bottom: 20%;
+    border: 3px solid wheat;
+    border-radius: 10px;
+}
+.menuA
+{
+    text-decoration: none;
+    color: #090C0F;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 900;
+    font-size: 20px;
+}
+.replaceWomen
+{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: wheat;
+    font-size: 20px;
+}
+.mainPhoto
+{
+    width: 70%;
+}
+.secondPhoto
+{
+    width: 90%;
+}
+#Welcome
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#whatsapp
+{
+    text-decoration: none;
+    background-color: wheat;
+    color: #090C0F;
+    font-size: 25px;
+    padding: 5%;
+    border-radius: 10px;
+    margin-bottom: 20%;
+}
+.welcoming
+{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+    color: wheat;
+    margin-top: 0px;
+    text-align: center;
+}
+.secondPhotoDiv
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.mainPhotoDiv
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.mainWomanDiv
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.real
+{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: wheat;
+    text-align: center;
+    font-size: 15px;
+}
