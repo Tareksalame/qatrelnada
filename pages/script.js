@@ -172,3 +172,44 @@ menList.forEach((val)=>
     menFunction(val)
 })
 
+
+
+
+let unisexList = [
+    {womenImg : './men.svg', image : '../MENIMAGES/1.jpg' , replace : 'M621', real:'HERMES TERRE D\'HERMES H24'},
+]
+let unisex = document.getElementById('unisex');
+
+const unisexFunction = (val)=>
+{
+    let mainDiv = document.createElement('div');
+    let mainPhotoDiv = document.createElement('div');
+    let mainPhoto = document.createElement('img');
+    let replace = document.createElement('h3');
+    let secondPhotoDiv = document.createElement('div')
+    let secondPhoto = document.createElement('img');
+    let real = document.createElement('h3');
+    mainDiv.setAttribute('class','mainWomanDiv');
+    mainPhotoDiv.setAttribute('class','mainPhotoDiv')
+    mainPhoto.setAttribute('class','mainPhoto');
+    replace.setAttribute('class','replaceWomen');
+    secondPhotoDiv.setAttribute('class','secondPhotoDiv')
+    secondPhoto.setAttribute('class','secondPhoto')
+    real.setAttribute('class','real')
+    secondPhotoDiv.appendChild(secondPhoto)
+    secondPhotoDiv.appendChild(real)
+    mainPhotoDiv.appendChild(mainPhoto)
+    mainPhotoDiv.appendChild(replace)
+    mainDiv.appendChild(mainPhotoDiv)
+    mainDiv.appendChild(secondPhotoDiv)
+    unisex.appendChild(mainDiv)
+    mainPhoto.src = val.womenImg
+    replace.innerHTML = val.replace
+    secondPhoto.src = val.image
+    real.innerHTML = val.real
+}
+
+unisexList.forEach((val)=>
+{
+    unisexFunction(val)
+})
