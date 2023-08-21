@@ -143,5 +143,10 @@ header
     align-items: center;
     width: 100%;
     margin-top: 20%;
-
+}
+#design
+{
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-bottom: 0px;
 }
