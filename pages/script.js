@@ -1,4 +1,3 @@
-const men = document.getElementById('men');
 
 let womenList = [
     {womenImg : './women.svg', image : '../images/1.jpg' , replace : 'W234', real:'CAROLIN HERERA GOOD GIRL GONE BAD'},
@@ -89,3 +88,87 @@ womenList.forEach((val)=>
 {
     womenFunction(val)
 })
+
+let menList = [
+    {womenImg : './men.svg', image : '../MENIMAGES/1.jpg' , replace : 'M621', real:'HERMES TERRE D\'HERMES H24'},
+    {womenImg : './men.svg', image : '../MENIMAGES/2.jpg' , replace : 'M623', real:'PACO RABANNE INVICTUS VICTORY'},
+    {womenImg : './men.svg', image : '../MENIMAGES/3.jpg' , replace : 'M103', real:'JEAN PAUL GAULTIER LE MALE'},
+    {womenImg : './men.svg', image : '../MENIMAGES/4.jpg' , replace : 'M33', real:'CHRISTIAN DIOR FAHRENHEIT ABSOLUTE'},
+    {womenImg : './men.svg', image : '../MENIMAGES/5.jpg' , replace : 'M629', real:'CHRISTIAN DIOR SAUVAGE ELIXIR'},
+    {womenImg : './men.svg', image : '../MENIMAGES/6.jpg' , replace : 'M631', real:'CAROLIN HERERA 212 HEROES'},
+    {womenImg : './men.svg', image : '../MENIMAGES/7.jpg' , replace : 'M635', real:'ROJA DOVE OLIGARCH'},
+    {womenImg : './men.svg', image : '../MENIMAGES/8.jpg' , replace : 'M35', real:'CHRISTIAN DIOR DIOR HOMME'},
+    {womenImg : './men.svg', image : '../MENIMAGES/9.jpg' , replace : 'M27', real:'CAROLINA HERRERA 212'},
+    {womenImg : './men.svg', image : '../MENIMAGES/10.jpg' , replace : 'M247', real:'DOLCE & GABBANA K BY'},
+    {womenImg : './men.svg', image : '../MENIMAGES/11.jpg' , replace : 'M627', real:'PACO RABANNE PHANTOM'},
+    {womenImg : './men.svg', image : '../MENIMAGES/12.jpg' , replace : 'M179', real:'BULGARI LE GEMME TYGAR'},
+    {womenImg : './men.svg', image : '../MENIMAGES/13.jpg' , replace : 'M59', real:'GIORGIO ARMANI ARMANI'},
+    {womenImg : './men.svg', image : '../MENIMAGES/14.jpg' , replace : 'M73', real:'GUCCI POUR HOMME GUCCI BY GUCCI'},
+    {womenImg : './men.svg', image : '../MENIMAGES/15.jpg' , replace : 'M85', real:'HUGO BOSS BALDESSARIN IAMBE'},
+    {womenImg : './men.svg', image : '../MENIMAGES/16.jpg' , replace : 'M71', real:'GUCCI GUILTY INTENS POUR HOMME'},
+    {womenImg : './men.svg', image : '../MENIMAGES/17.jpg' , replace : 'M291', real:'HUGO BOSS BOSS BOTTLE INTENS'},
+    {womenImg : './men.svg', image : '../MENIMAGES/18.jpg' , replace : 'M267', real:'EMPORIO ARMANI STROONGER WITH YOU'},
+    {womenImg : './men.svg', image : '../MENIMAGES/19.jpg' , replace : 'M87', real:'HUGO BOSS'},
+    {womenImg : './men.svg', image : '../MENIMAGES/20.1.jpg' , replace : 'M75', real:'VERSACE EROS'},
+    {womenImg : './men.svg', image : '../MENIMAGES/21.1.jpg' , replace : 'M05', real:'ANTONIO BANDERS BLE SEDUCTION'},
+    {womenImg : './men.svg', image : '../MENIMAGES/22.1.jpg' , replace : 'M25', real:'CAROLINA HERRERA 212 SEXY'},
+    {womenImg : './men.svg', image : '../MENIMAGES/23.1.jpg' , replace : 'M243', real:'CAROLINA HERRERA BADBOY'},
+    {womenImg : './men.svg', image : '../MENIMAGES/24.1.jpg' , replace : 'M17', real:'CHANEL ALLURE HOMME SPORT'},
+    {womenImg : './men.svg', image : '../MENIMAGES/25.1.jpg' , replace : 'M19', real:'CHANEL BLUE'},
+    {womenImg : './men.svg', image : '../MENIMAGES/26.1.jpg' , replace : 'M21', real:'CHANEL EGOIST E PLATINUM'},
+    {womenImg : './men.svg', image : '../MENIMAGES/27.1.jpg' , replace : 'M159', real:'CHRISTIAN DIOR SAUVAGE'},
+    {womenImg : './men.svg', image : '../MENIMAGES/28.1.jpg' , replace : 'M131', real:'CREED AVENTUS'},
+    {womenImg : './men.svg', image : '../MENIMAGES/29.1.jpg' , replace : 'M285', real:'CREED AVENTUS COLOGNE'},
+    {womenImg : './men.svg', image : '../MENIMAGES/30.1.jpg' , replace : 'M57', real:'GIORGIO ARMANI AQUA DI GIO'},
+    {womenImg : './men.svg', image : '../MENIMAGES/31.1.jpg' , replace : 'M125', real:'HERMES TERRE DHERMES'},
+    {womenImg : './men.svg', image : '../MENIMAGES/32.1.jpg' , replace : 'M91', real:'PACO RABANNE ONE MILLION'},
+    {womenImg : './men.svg', image : '../MENIMAGES/33.1.jpg' , replace : 'M95', real:'PACO RABANNI INVICTUS'},
+    {womenImg : './men.svg', image : '../MENIMAGES/34.1.jpg' , replace : 'M177', real:'SHAIK CHIC NO 70 SHAIK'},
+    {womenImg : './men.svg', image : '../MENIMAGES/35.1.jpg' , replace : 'M295', real:'TOM FORD NOIR EXTREME'},
+    {womenImg : './men.svg', image : '../MENIMAGES/36.1.jpg' , replace : 'M77', real:'VERSACE MAN EAU FRAICHE'},
+    {womenImg : './men.svg', image : '../MENIMAGES/37.1.jpg' , replace : 'M23', real:'CAROLINA HERRERA 212 VIP'},
+    {womenImg : './men.svg', image : '../MENIMAGES/38.1.jpg' , replace : 'M241', real:'BALIDASARANI AMRRE OUD'},
+    {womenImg : './men.svg', image : '../MENIMAGES/39.1.jpg' , replace : 'M255', real:'YVES LAURENTY'},
+    {womenImg : './men.svg', image : '../MENIMAGES/40.1.jpg' , replace : 'M10.013', real:'INVICTUS VANILLA'},
+    {womenImg : './men.svg', image : '../MENIMAGES/41.1.jpg' , replace : 'M111', real:'LACOSTE EAU DE L.12.12 WHITE'},
+
+
+]
+
+let men = document.getElementById('men');
+
+const menFunction = (val)=>
+{
+    let mainDiv = document.createElement('div');
+    let mainPhotoDiv = document.createElement('div');
+    let mainPhoto = document.createElement('img');
+    let replace = document.createElement('h3');
+    let secondPhotoDiv = document.createElement('div')
+    let secondPhoto = document.createElement('img');
+    let real = document.createElement('h3');
+    mainDiv.setAttribute('class','mainWomanDiv');
+    mainPhotoDiv.setAttribute('class','mainPhotoDiv')
+    mainPhoto.setAttribute('class','mainPhoto');
+    replace.setAttribute('class','replaceWomen');
+    secondPhotoDiv.setAttribute('class','secondPhotoDiv')
+    secondPhoto.setAttribute('class','secondPhoto')
+    real.setAttribute('class','real')
+    secondPhotoDiv.appendChild(secondPhoto)
+    secondPhotoDiv.appendChild(real)
+    mainPhotoDiv.appendChild(mainPhoto)
+    mainPhotoDiv.appendChild(replace)
+    mainDiv.appendChild(mainPhotoDiv)
+    mainDiv.appendChild(secondPhotoDiv)
+    men.appendChild(mainDiv)
+    mainPhoto.src = val.womenImg
+    replace.innerHTML = val.replace
+    secondPhoto.src = val.image
+    real.innerHTML = val.real
+}
+
+
+menList.forEach((val)=>
+{
+    menFunction(val)
+})
+

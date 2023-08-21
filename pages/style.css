@@ -53,11 +53,11 @@ header
 }
 .mainPhoto
 {
-    width: 70%;
+    width: 60%;
 }
 .secondPhoto
 {
-    width: 90%;
+    width: 80%;
 }
 #Welcome
 {
@@ -102,7 +102,7 @@ header
 {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 }
 .real
@@ -111,4 +111,16 @@ header
     color: wheat;
     text-align: center;
     font-size: 15px;
+}
+#womenSection
+{
+    border-bottom: 5px solid wheat;
+}
+#menSection
+{
+    margin-top: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
