@@ -14,6 +14,10 @@ app.get('/',(req,res)=>
 {
     res.sendFile(__dirname + '/pages/index.html')
 })
+app.get('/Products',(req,res)=>
+{
+    res.sendFile(__dirname + '/pages/LandingPage.html')
+})
 
 
 app.listen(process.env.PORT || 2222, () => console.log('Server running on port', process.env.PORT || 2222));

@@ -27,77 +27,15 @@ header
 #menuDiv
 {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    /* width: 100%; */
-    align-items: center;
-    /* border: 3px solid wheat; */
-}
-.InnerDivs
-{
-    display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-around;
     width: 100%;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    align-items: center;
+    background-color: wheat;
     height: 50px;
-    border: 8px solid wheat;
+    margin-bottom: 20%;
+    border: 3px solid wheat;
     border-radius: 10px;
-
-    background-color: wheat;
-    margin-top: 5%;
-}
-#LinksMainDiv
-{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    margin-top: 20px;
-}
-.LinkDivs
-{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 60px;
-    margin: 10px;
-    width: 60px;
-    background-color: wheat;
-    border-radius: 10px;
-}
-#miniuDiv
-{
-    bottom: 0px;
-    position: fixed;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    color: white;
-    align-self: center;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 10px;
-}
-#whatsapp
-{
-    text-decoration: none;
-    color: #090C0F;
-    font-size: 25px;
-    align-self: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* border-radius: 10px; */
-}
-option
-{
-    width: 45px;
-    height: 45px;
-}
-#whatsappImg
-{
-    width: 80%;
 }
 .menuA
 {
@@ -128,14 +66,22 @@ option
     justify-content: center;
     align-items: center;
 }
-
+#whatsapp
+{
+    text-decoration: none;
+    background-color: wheat;
+    color: #090C0F;
+    font-size: 25px;
+    padding: 5%;
+    border-radius: 10px;
+    margin-bottom: 20%;
+}
 .welcoming
 {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 20px;
     color: wheat;
-    margin-top: 20px;
-
+    margin-top: 0px;
     text-align: center;
 }
 .secondPhotoDiv
