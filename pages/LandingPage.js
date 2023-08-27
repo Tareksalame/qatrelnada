@@ -214,6 +214,7 @@ const unisexFunction = (val)=>
     mainPhotoDiv.appendChild(replace)
     mainDiv.appendChild(mainPhotoDiv)
     mainDiv.appendChild(secondPhotoDiv)
+    // mainDiv.setAttribute('class','hidden')
     unisex.appendChild(mainDiv)
     mainPhoto.src = val.womenImg
     replace.innerHTML = val.replace
@@ -269,3 +270,19 @@ kidsList.forEach((val)=>
 {
     kidsFunction(val)
 })
+
+const observer = new IntersectionObserver((entries)=>{
+    entries.forEach((entry)=>
+    {
+        if(entry.isIntersecting)
+        {
+            entry.target.classList.add('show')
+        }else
+        {
+            entry.target.classList.remove('show')
+        }
+    })
+});
+
+const hiddenElements = document.querySelectorAll('.hidden')
+hiddenElements.forEach((el)=>{observer.observe(el)})
