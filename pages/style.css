@@ -39,7 +39,7 @@ header
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 75%;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     height: 50px;
     border: 8px solid wheat;
