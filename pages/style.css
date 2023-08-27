@@ -68,10 +68,11 @@ header
 }
 #miniuDiv
 {
-    bottom: 0px;
-    position: fixed;
+    /* bottom: 0px; */
+    /* position: fixed; */
     justify-content: center;
     align-items: center;
+    margin-top: 50px;
     display: flex;
     flex-direction: column;
     color: white;
@@ -203,4 +204,5 @@ option
     color: white;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     margin-bottom: 0px;
+    margin-top: 40px;
 }
